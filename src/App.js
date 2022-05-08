@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <h1>Price is Right!</h1>
+      <h2>Guess the correct number for a chance to double your money!</h2>
+      <button>Connect AlgoWallet</button>
+      <h3>OR</h3>
+
+      <div class="mnemonic">
+        <span>Import Account by mnemonic</span>
+        <br></br>
+        <br></br>
+
+        <textarea
+          name="secret"
+          class="ContractInfo "
+          placeholder="Paste Mnemonic Key"
+          data-gramm="false"
+          wt-ignore-input="true"
+          //data-quillbot-element="0Yn1Rw5qtBy0352nOABcD"
         >
-          Learn React
-        </a>
-      </header>
+          {" "}
+        </textarea>
+      </div>
     </div>
   );
 }
